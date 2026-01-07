@@ -1,20 +1,28 @@
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { useFonts } from "expo-font";
+import BottomTabs from './navigation/BottomTabs';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
 
 export default function App() {
+  const [loaded] = useFonts({
+    Light: require("./assets/fonts/Montserrat-Light.ttf"),
+    Regular: require("./assets/fonts/Montserrat-Regular.ttf"),
+    Medium: require("./assets/fonts/Montserrat-Medium.ttf"),
+    SemiBold: require("./assets/fonts/Montserrat-SemiBold.ttf"),
+    Bold: require("./assets/fonts/Montserrat-Bold.ttf"),
+  });
+
+  if (!loaded) return null;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <StatusBar style="dark" backgroundColor="#f11885ff" />
+      <NavigationContainer>
+        <BottomTabs />
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
