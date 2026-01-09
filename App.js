@@ -23,9 +23,9 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <StatusBar style="dark" backgroundColor="#f11885ff" />
+      <StatusBar style="dark"  />
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
+        <Stack.Navigator initialRouteName="Main" screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="Main" component={BottomTabs} />
         </Stack.Navigator>

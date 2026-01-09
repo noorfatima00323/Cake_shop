@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   },
   bannerText: {
     fontSize: 18,
-    fontWeight: '600',
+    fontFamily: 'SemiBold',
     color: '#1f2937',
   },
   container: {
@@ -92,19 +92,19 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    fontWeight: '700',
+    fontFamily: 'Bold',
     color: '#1f2937',
     marginBottom: 4,
   },
   price: {
     fontSize: 20,
-    fontWeight: '700',
+    fontFamily: 'Bold',
     color: '#f11885ff',
     marginBottom: 16,
   },
   sectionTitle: {
     fontSize: 18,
-    fontWeight: '600',
+    fontFamily: 'SemiBold',
     marginTop: 16,
     marginBottom: 6,
     color: '#1f2937',
@@ -112,6 +112,8 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 15,
     lineHeight: 22,
+    fontFamily: 'Regular',
+    fontWeight: '400',
     color: '#4b5563',
   },
   cartBtn: {
@@ -127,6 +129,6 @@ const styles = StyleSheet.create({
   cartText: {
     color: '#fff',
     fontSize: 16,
-    fontWeight: '600',
+    fontFamily: 'SemiBold',
   },
 });

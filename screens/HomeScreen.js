@@ -41,7 +41,12 @@ function DessertCard({ item, navigation }) {
         <Text style={styles.cardDesc}>{item.desc}</Text>
         <Text style={styles.cardPrice}>{item.price}</Text>
       </View>
+       {/* ADD BUTTON */}
+      <TouchableOpacity style={styles.addBtn}>
+        <Text style={styles.addBtnText}>+</Text>
+      </TouchableOpacity>
     </TouchableOpacity>
+    
   );
 }
 
@@ -61,7 +66,7 @@ const filteredDesserts = DESSERTS.filter(item =>
       <SafeAreaView edges={['top']} style={styles.headerSafe}>
       {/* Header with Logout Button */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>HELLO ANEEQ</Text>
+        <Text style={styles.headerTitle}>WELCOME BACK</Text>
         <TouchableOpacity style={styles.logoutBtn} onPress={onLogout}>
           <Text style={styles.logoutText}>Logout</Text>
         </TouchableOpacity>
@@ -144,7 +149,8 @@ const styles = StyleSheet.create({
   },
   logoutText: {
     color: "#fff",
-    fontWeight: "600",
+    fontFamily:"SemiBold",
+    // fontWeight: "600",
     fontSize: 12,
   },
   headerContent: {
@@ -165,10 +171,11 @@ const styles = StyleSheet.create({
     color: "#000",
   },
   quoteContainer: {
-    height: 160,
+    height: 130,
+    // width:  '100%',
     backgroundColor: "#f11885ff",
     borderRadius: 12,
-    padding: 16,
+    padding: 14,
     marginBottom: 16,
     flexDirection: 'row',
     alignItems: 'center',
@@ -181,7 +188,7 @@ const styles = StyleSheet.create({
   },
   quoteTextWrap: {
     flex: 1,
-    paddingRight: 8,
+    // paddingRight: 6,
   },
   quote: {
     fontSize: 25,
@@ -199,8 +206,9 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 20,
-    fontWeight: "700",
-    marginBottom: 12,
+    fontFamily:"SemiBold",
+    // fontWeight: "700",
+    marginBottom: 1,
     color: "#1f2937",
   },
   list: {
@@ -235,18 +243,21 @@ const styles = StyleSheet.create({
   cardBody: { marginBottom: 8 },
   cardTitle: {
     fontSize: 15,
-    fontWeight: "600",
+    fontFamily:"Medium",
+    // fontWeight: "600",
     marginBottom: 4,
     color: "#000",
   },
   cardDesc: {
     fontSize: 12,
+    fontFamily:"Light",
     color: "#6b7280",
     marginBottom: 8,
   },
   cardPrice: {
     fontSize: 18,
-    fontWeight: "700",
+    fontFamily:"Bold",
+    // fontWeight: "700",
     color: "#f11885ff",
   },
 
@@ -255,8 +266,8 @@ const styles = StyleSheet.create({
     position: "absolute",
     right: 12,
     bottom: 20,
-    width: 25,
-    height: 25,
+    width: 30,
+    height: 30,
     borderRadius: 18,
     backgroundColor: "#f11885ff",
     alignItems: "center",
@@ -269,8 +280,8 @@ const styles = StyleSheet.create({
   },
   addBtnText: {
     color: "#fff",
-    fontSize: 20,
-    fontWeight: "700",
+    fontSize: 22,
+    fontFamily:"SemiBold",
     lineHeight: 22,
   },
 });

@@ -28,6 +28,9 @@ function CartItem({ item }) {
         <Text style={styles.cardPrice}>{item.price}</Text>
         <Text style={styles.cardQty}>Qty: {item.qty}</Text>
       </View>
+      <TouchableOpacity style={styles.addBtn}>
+        <Text style={styles.addBtnText}>+</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -85,6 +88,7 @@ const styles = StyleSheet.create({
     margin: 8,
     marginHorizontal: 16,
     overflow: "hidden",
+    position: 'relative',
     elevation: 3,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
@@ -103,23 +107,26 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 14,
-    fontWeight: "600",
+    fontFamily: "Medium",
     color: "#333",
     marginBottom: 4,
   },
   cardDesc: {
     fontSize: 12,
+    fontFamily: "Light",
+    fontWeight: "400",
     color: "#666",
     marginBottom: 6,
   },
   cardPrice: {
     fontSize: 16,
-    fontWeight: "bold",
+    fontFamily: "Bold",
     color: "#f11885ff",
     marginBottom: 4,
   },
   cardQty: {
     fontSize: 12,
+    fontFamily: "Regular",
     color: "#999",
     fontWeight: "500",
   },
@@ -140,7 +147,7 @@ const styles = StyleSheet.create({
   },
   totalLabel: {
     fontSize: 18,
-    fontWeight: "bold",
+    fontFamily: "Bold",
     color: "#f11885ff",
     textAlign: "right",
   },
@@ -154,6 +161,28 @@ const styles = StyleSheet.create({
   checkoutText: {
     color: "#fff",
     fontSize: 16,
-    fontWeight: "600",
+    fontFamily: "SemiBold",
+  },
+  addBtn: {
+    position: "absolute",
+    right: 12,
+    bottom: 12,
+    width: 25,
+    height: 25,
+    borderRadius: 13,
+    backgroundColor: "#f11885ff",
+    alignItems: "center",
+    justifyContent: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.12,
+    shadowRadius: 3,
+    elevation: 4,
+  },
+  addBtnText: {
+    color: "#fff",
+    fontSize: 20,
+    fontFamily: "SemiBold",
+    lineHeight: 20,
   },
 });

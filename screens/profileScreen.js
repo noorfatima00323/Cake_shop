@@ -70,9 +70,11 @@ const ProfileScreen = ({ navigation }) => {
             <Ionicons name="chevron-forward" size={20} color="#7a818dff" />
           </TouchableOpacity>
 
-          <TouchableOpacity style={[styles.menuItem, {backgroundColor:'#f7b8d8ff',}]}>
-            <Text style={[styles.logtxt, ]}>Logout</Text>
-            <Ionicons name="chevron-forward" size={20} color="#7a818dff" />
+          <TouchableOpacity style={[styles.menuItem, 
+            // {backgroundColor:'#f7b8d8ff',}
+            ]}>
+            <Text style={[styles.menuText, { color: '#f11885c8' }]}>Logout</Text>
+            <Ionicons name="chevron-forward" size={20} color="#f11885c8" />
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -102,12 +104,14 @@ const styles = StyleSheet.create({
 
   userName: {
     fontSize: 25,
-    fontWeight: '700',
+    // fontWeight: '700',
+    fontFamily: 'Bold',
     color: '#111',
   },
 
   userEmail: {
     fontSize: 14,
+    fontFamily: 'Regular',
     color: '#6b7280',
     marginTop: 4,
   },
@@ -115,7 +119,7 @@ const styles = StyleSheet.create({
   cardsRow: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginVertical: 20,
+  
     paddingHorizontal: 10,
   },
 
@@ -125,26 +129,28 @@ const styles = StyleSheet.create({
     borderWidth:1,
     borderColor:'#f11885ff',
     borderRadius: 12,
-    paddingVertical: 16,
+    paddingVertical: 10,
     alignItems: 'center',
     elevation: 3,
   },
 
   cardNumber: {
     fontSize: 20,
-    fontWeight: '800',
+    // fontWeight: '800',
+    fontFamily: 'Bold',
     color: '#f11885ff',
   },
 
   cardLabel: {
     fontSize: 13,
     marginTop: 4,
-    fontWeight: '600',
+    fontFamily: 'Medium',
+    // fontWeight: '600',
     color: '#374151',
   },
 
   menu: {
-    marginTop: 10,
+    marginTop: 20,
     paddingHorizontal: 20,
     
   },
@@ -164,14 +170,9 @@ const styles = StyleSheet.create({
 
   menuText: {
     fontSize: 16,
+    fontFamily: 'Medium',
     color: '#3c3c3cff',
     fontWeight: '500',
   },
-  logtxt:{
-    fontSize: 16,
-    
-    color: '#f11885c8',
-    fontWeight: '500',
-    
-  }
+  
 });
