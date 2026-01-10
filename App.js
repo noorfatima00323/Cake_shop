@@ -5,6 +5,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { useFonts } from "expo-font";
 import BottomTabs from './navigation/BottomTabs';
 import LoginScreen from './screens/LoginScreen';
+import { UserProvider } from './context/UserContext';
 
 const Stack = createNativeStackNavigator();
 import { StatusBar } from 'expo-status-bar';
@@ -23,13 +24,15 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <StatusBar style="dark"  />
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="Main" screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="Login" component={LoginScreen} />
-          <Stack.Screen name="Main" component={BottomTabs} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <UserProvider>
+        <StatusBar style="dark"  />
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="Main" screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="Login" component={LoginScreen} />
+            <Stack.Screen name="Main" component={BottomTabs} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </UserProvider>
     </SafeAreaProvider>
   );
 }

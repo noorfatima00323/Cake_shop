@@ -9,6 +9,8 @@ import profileScreen from '../screens/profileScreen';
 import FavoritesScreen from '../screens/FavoritesScreen';
 import ProductDetailScreen from '../screens/productDetails';
 import CheckoutScreen from '../screens/CheckoutScreen';
+import AccountScreen from '../screens/AccountScreen';
+import SettingsScreen from '../screens/SettingsScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -27,6 +29,16 @@ function CartStack() {
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="CartMain" component={CartScreen} />
       <Stack.Screen name="Checkout" component={CheckoutScreen} />
+    </Stack.Navigator>
+  );
+}
+
+function ProfileStack() {
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="ProfileMain" component={profileScreen} />
+      <Stack.Screen name="AccountInfo" component={AccountScreen} />
+      <Stack.Screen name="Settings" component={SettingsScreen} />
     </Stack.Navigator>
   );
 }
@@ -53,7 +65,7 @@ export default function BottomTabs() {
       <Tab.Screen name="Home" component={HomeStack} />
       <Tab.Screen name="Favorites" component={FavoritesStack} />
       <Tab.Screen name="Cart" component={CartStack} />
-      <Tab.Screen name="Profile" component={profileScreen} />
+      <Tab.Screen name="Profile" component={ProfileStack} />
     </Tab.Navigator>
   );
 }
