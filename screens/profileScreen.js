@@ -9,9 +9,11 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-
+import { useContext } from 'react';
+import { UserContext } from '../context/UserContext';
 
 const ProfileScreen = ({ navigation }) => {
+  const { userData } = useContext(UserContext);
   return (
     <SafeAreaView style={styles.safe}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
@@ -21,8 +23,8 @@ const ProfileScreen = ({ navigation }) => {
             source={require('../assets/profile.png')} // add any image
             style={styles.profileImage}
           />
-          <Text style={styles.userName}>John Doe</Text>
-          <Text style={styles.userEmail}>john@example.com</Text>
+          <Text style={styles.userName}>{userData.firstName} {userData.lastName}</Text>
+          <Text style={styles.userEmail}>{userData.email}</Text>
         </View>
 
         {/* Small Cards */}
@@ -45,7 +47,10 @@ const ProfileScreen = ({ navigation }) => {
 
         {/* Menu Options */}
         <View style={styles.menu}>
-          <TouchableOpacity style={styles.menuItem}>
+           <TouchableOpacity 
+            style={styles.menuItem}
+            onPress={() => navigation.navigate('AccountInfo')}
+          >
             <Text style={styles.menuText}>Account Information</Text>
             <Ionicons name="chevron-forward" size={20} color="#7a818dff" />
           </TouchableOpacity>
@@ -60,7 +65,10 @@ const ProfileScreen = ({ navigation }) => {
             <Ionicons name="chevron-forward" size={20} color="#7a818dff" />
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.menuItem}>
+           <TouchableOpacity 
+            style={styles.menuItem}
+            onPress={() => navigation.navigate('Settings')}
+          >
             <Text style={styles.menuText}>Settings</Text>
             <Ionicons name="chevron-forward" size={20} color="#7a818dff" />
           </TouchableOpacity>
@@ -70,9 +78,12 @@ const ProfileScreen = ({ navigation }) => {
             <Ionicons name="chevron-forward" size={20} color="#7a818dff" />
           </TouchableOpacity>
 
-          <TouchableOpacity style={[styles.menuItem, 
+                    <TouchableOpacity 
+            style={[styles.menuItem,
             // {backgroundColor:'#f7b8d8ff',}
-            ]}>
+           ]}
+            onPress={() => navigation.navigate('Login')}
+          >
             <Text style={[styles.menuText, { color: '#f11885c8' }]}>Logout</Text>
             <Ionicons name="chevron-forward" size={20} color="#f11885c8" />
           </TouchableOpacity>
