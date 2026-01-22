@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
   price: {
     fontSize: 20,
     fontFamily: 'Bold',
-    color: '#f11885ff',
+    color: '#FF6F61ff',
     marginBottom: 16,
   },
   sectionTitle: {
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     bottom: 20,
     left: 16,
     right: 16,
-    backgroundColor: '#f11885ff',
+    backgroundColor: '#FF6F61ff',
     paddingVertical: 14,
     borderRadius: 10,
     alignItems: 'center',

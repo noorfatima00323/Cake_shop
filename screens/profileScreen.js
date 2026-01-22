@@ -84,8 +84,8 @@ const ProfileScreen = ({ navigation }) => {
            ]}
             onPress={() => navigation.navigate('Login')}
           >
-            <Text style={[styles.menuText, { color: '#f11885c8' }]}>Logout</Text>
-            <Ionicons name="chevron-forward" size={20} color="#f11885c8" />
+            <Text style={[styles.menuText, { color: '#FF6F61ff' }]}>Logout</Text>
+            <Ionicons name="chevron-forward" size={20} color="#FF6F61ff" />
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f7b8d8ff',
     width: '30%',
     borderWidth:1,
-    borderColor:'#f11885ff',
+    borderColor:'#FF6F61ff',
     borderRadius: 12,
     paddingVertical: 10,
     alignItems: 'center',
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     // fontWeight: '800',
     fontFamily: 'Bold',
-    color: '#f11885ff',
+    color: '#FF6F61ff',
   },
 
   cardLabel: {
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
   menuItem: {
     backgroundColor: '#fff',
     borderWidth:1.5,
-    borderColor:'#f11885ff',
+    borderColor:'#FF6F61ff',
     paddingVertical: 16,
     paddingHorizontal: 12,
     borderRadius: 10,

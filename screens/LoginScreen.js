@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     fontFamily: 'serif',
     fontWeight: "bold",
     marginBottom: 38,
-    color: "#f11885ff",
+    color: "#FF6F61ff",
 },
   title: {
     fontSize: 28,
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   button: {
-    backgroundColor: "#f11885ff",
+    backgroundColor: "#FF6F61ff",
     paddingVertical: 14,
     paddingHorizontal: 28,
     borderRadius: 8,

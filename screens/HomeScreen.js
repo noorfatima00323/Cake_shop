@@ -139,10 +139,10 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 24,
     fontFamily:"Bold",
-    color: "#f11885ff",
+    color: "#FF6F61",
   },
   logoutBtn: {
-    backgroundColor: "#f11885ff",
+    backgroundColor: "#FF6F61",
     paddingVertical: 5,
     paddingHorizontal: 10,
     borderRadius: 6,
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
   searchBar: {
     backgroundColor: "#f7f7f784",
     borderWidth: 1.5,
-    borderColor: "#f11885ff",
+    borderColor: "#FF6F61",
     borderRadius: 8,
     paddingHorizontal: 12,
     paddingVertical: 10,
@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
   quoteContainer: {
     height: 130,
     // width:  '100%',
-    backgroundColor: "#f11885ff",
+    backgroundColor: "#FF6F61",
     borderRadius: 12,
     padding: 14,
     marginBottom: 16,
@@ -258,7 +258,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontFamily:"Bold",
     // fontWeight: "700",
-    color: "#f11885ff",
+    color: "#FF6F61",
   },
 
   /* New styles for add (plus) button */
@@ -269,7 +269,7 @@ const styles = StyleSheet.create({
     width: 30,
     height: 30,
     borderRadius: 18,
-    backgroundColor: "#f11885ff",
+    backgroundColor: "#FF6F61",
     alignItems: "center",
     justifyContent: "center",
     shadowColor: "#000",

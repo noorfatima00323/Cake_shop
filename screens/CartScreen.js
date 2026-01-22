@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 28,
     fontFamily: "Bold",
-    color: "#f11885ff",
+    color: "#FF6F61ff",
   },
   card: {
     backgroundColor: "#fff",
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
   cardPrice: {
     fontSize: 16,
     fontFamily: "Bold",
-    color: "#f11885ff",
+    color: "#FF6F61ff",
     marginBottom: 4,
   },
   cardQty: {
@@ -148,12 +148,12 @@ const styles = StyleSheet.create({
   totalLabel: {
     fontSize: 18,
     fontFamily: "Bold",
-    color: "#f11885ff",
+    color: "#FF6F61ff",
     textAlign: "right",
   },
   checkoutBtn: {
     marginTop: 8,
-    backgroundColor: "#f11885ff",
+    backgroundColor: "#FF6F61ff",
     borderRadius: 10,
     paddingVertical: 10,
     alignItems: "center",
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
     width: 25,
     height: 25,
     borderRadius: 13,
-    backgroundColor: "#f11885ff",
+    backgroundColor: "#FF6F61ff",
     alignItems: "center",
     justifyContent: "center",
     shadowColor: "#000",

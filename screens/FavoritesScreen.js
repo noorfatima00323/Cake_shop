@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 28,
     fontFamily: "Bold",
-    color: "#f11885ff",
+    color: "#FF6F61ff",
   },
   card: {
     backgroundColor: "#fff",
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   cardPrice: {
     fontSize: 16,
     fontFamily: "Bold",
-    color: "#f11885ff",
+    color: "#FF6F61ff",
   },
   addBtn: {
     position: "absolute",
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     width: 25,
     height: 25,
     borderRadius: 13,
-    backgroundColor: "#f11885ff",
+    backgroundColor: "#FF6F61ff",
     alignItems: "center",
     justifyContent: "center",
     shadowColor: "#000",

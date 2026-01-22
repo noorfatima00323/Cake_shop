@@ -299,7 +299,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   editButton: {
-    backgroundColor: '#f11885ff',
+    backgroundColor: '#FF6F61ff',
   },
   saveButton: {
     backgroundColor: '#10b981',
